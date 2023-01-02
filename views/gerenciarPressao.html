@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/all.css">
+        <link rel="stylesheet"
+            href="../plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="flex-dashboard">
+            <sidebar id="sidebar" class="sidebar">
+                <div class="sidebar-title">
+                    <img src="../img/logo-new-500.png" alt="">
+                    <h2>Trilha de Saúde</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <a href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <a href="perfil.html">Perfil</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                            <a href="gerenciarPeso.html">Gerenciar Peso e Altura</a>
+                        </li>
+                        <li class="selected">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            <a href="gerenciarPressao.html">Gerenciar pressão arterial</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-person-skating"></i>
+                            <a href="gerenciarAtividades.html">Gerenciar atividades físicas</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <a href="gerenciarAlimentos.html">Gerenciar Alimentos</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-calculator"></i>
+                            <a href="calcularIMC.html">Calcular IMC</a>
+                        </li>
+                    </ul>
+                </div>
+            </sidebar>
+            <main id="mainContent">
+                <header>
+                    <i id="iconMenu" onclick="responsiveSidebar()" class="fas fa-bars"></i>
+                    <a href="../index.html"> <i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+                </header>
+                <div class="main-content">
+                    <div class="main-content-title">
+                        <h2>Gerenciar Pressão</h2>
+                    </div>
+                   <div class="panel-row">
+                      <button class="panel panel-50" a-view="cadastrarPressao" onclick="fetchContent(this)" a-folder="pressao"><i class="fa-solid fa-plus"></i>Cadastrar Pressão</button>
+                      <button class="panel panel-50" a-view="visualizarPressao" onclick="fetchContent(this)" a-folder="pressao"><i class="fa-solid fa-table"></i>Visualizar Pressão</button>
+                   </div>
+                   <div class="content" id="ajax-content">
+
+                   </div>
+                   </div>
+                </div>
+            </main>
+        </div>
+        <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../plugins/fontawesome/js/all.min.js"></script>
+        <script src="../js/ajax.js"></script>
+        <script src="../js/menu.js"></script>
+    </body>
+</html>

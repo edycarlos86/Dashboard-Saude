@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/all.css">
+        <link rel="stylesheet"
+            href="../plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="flex-dashboard">
+            <sidebar id="sidebar" class="sidebar">
+                <div class="sidebar-title">
+                    <img src="../img/logo-new-500.png" alt="">
+                    <h2>Trilha de Saúde</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <a href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="selected">
+                            <i class="fa-solid fa-user"></i>
+                            <a href="perfil.html">Perfil</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                            <a href="gerenciarPeso.html">Gerenciar Peso e Altura</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            <a href="gerenciarPressao.html">Gerenciar pressão arterial</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-person-skating"></i>
+                            <a href="gerenciarAtividades.html">Gerenciar atividades físicas</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <a href="gerenciarAlimentos.html">Gerenciar Alimentos</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-calculator"></i>
+                            <a href="calcularIMC.html">Calcular IMC</a>
+                        </li>
+                        <li class="sidebar_logout">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <a href="../index.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </sidebar>
+            <main id="mainContent">
+                <header>
+                    <i id="iconMenu" onclick="responsiveSidebar()" class="fas fa-bars"></i>
+                    <a href="../index.html"> <i class="fa-solid
+                            fa-right-from-bracket"></i>Logout</a>
+                </header>
+                <div class="main-content">
+                    <div class="main-content-title">
+                        <h2>Perfil</h2>
+                    </div>
+                    <div class="perfil-parent">
+                        <div class="perfil">
+                            <div class="perfil-img">
+                                <div class="img">
+
+                                </div>
+                            </div>
+                            <div class="perfil-form">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Nome
+                                            Completo</label>
+                                        <input type="text" class="form-control"
+                                            id="name" placeholder="digite seu nome">
+                                        <div class="mb-3">
+                                            <label for="email"
+                                                class="form-label">E-mail</label>
+                                            <input type="email"
+                                                class="form-control"
+                                                id="email" placeholder="digite seu e-mail">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="idade"
+                                                class="form-label">Idade</label>
+                                            <input type="number"
+                                                class="form-control" id="idade" placeholder="digite sua idade">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="genero">Gênero</label>
+                                            <select class="form-control"
+                                                id="genero">
+                                                <option>Masculino</option>
+                                                <option>Feminino</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="senha"
+                                                class="form-label">Senha</label>
+                                            <input type="password"
+                                                class="form-control" id="senha" placeholder="digite sua senha">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formFile"
+                                                class="form-label">Imagem de
+                                                Perfil</label>
+                                            <input class="form-control"
+                                                type="file" id="formFile">
+                                        </div>
+                                        <button type="submit" class="btn
+                                            btn-primary">Salvar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+            <script src="../plugins/fontawesome/js/all.min.js"></script>
+            <script src="../js/menu.js"></script>
+        </body>
+    </html>
